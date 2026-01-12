@@ -15,6 +15,8 @@ public class EmailController {
 
     @PostMapping("/send-email")
     public String sendEmail(@RequestBody String message) {
+        String lastWord =
+                message.substring(message.lastIndexOf(" ") + 1);
 
         SimpleMailMessage mail = new SimpleMailMessage();
         mail.setTo("vinayrajpoot64@gmail.com");   // demo receiver
