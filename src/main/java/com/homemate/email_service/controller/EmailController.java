@@ -19,7 +19,7 @@ public class EmailController {
                 message.substring(message.lastIndexOf(" ") + 1);
 
         SimpleMailMessage mail = new SimpleMailMessage();
-        mail.setTo("vinayrajpoot64@gmail.com");   // demo receiver
+        mail.setTo("test@gmail.com");   // demo receiver
         mail.setSubject("Service Booking Confirmation");
         mail.setText(message);
 
